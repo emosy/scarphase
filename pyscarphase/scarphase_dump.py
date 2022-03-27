@@ -30,8 +30,10 @@
 
 import sys, argparse
 
-import proto.meta
-import proto.data
+# import proto.meta
+# import proto.data
+
+import proto
 
 import cmd
 

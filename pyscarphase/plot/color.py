@@ -39,7 +39,7 @@ COLORS = [
     ]
 
 cconv = matplotlib.colors.ColorConverter()
-for i in xrange(len(COLORS)):
+for i in range(len(COLORS)):
     COLORS[i] = cconv.to_rgb(COLORS[i])
 
 cm = matplotlib.colors.ListedColormap(COLORS, name='scarphase')

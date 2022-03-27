@@ -56,6 +56,9 @@ find_library(
 # boost                                                                        #
 ################################################################################
 
+# install(PROGRAMS ${Boost_LIBRARIES} DESTINATION ~/boost_1_77_0/libs)
+# set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ~/boost_1_77_0/libs)
+
 find_package(Boost REQUIRED COMPONENTS program_options)
 include_directories(${Boost_INCLUDE_DIRS})
 

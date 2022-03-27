@@ -30,6 +30,13 @@
 
 import sys, collections
 
+import pyscarphase.scarphase_dump as scarphase_dump
+import pyscarphase.scarphase_plot as scarphase_plot
+import pyscarphase.scarphase_profile as scarphase_profile
+import pyscarphase.scarphase_show as scarphase_show
+import pyscarphase.scarphase_refine as scarphase_refine
+import pyscarphase.scarphase_simpoint as scarphase_simpoint
+
 class Dispatcher:
 
     CmdData = collections.namedtuple('CmdData', [ 'func', 'help' ])
@@ -37,12 +44,20 @@ class Dispatcher:
     def __init__(self, prog = sys.argv[0]):
         self.prog = prog
 
-        import scarphase_dump
-        import scarphase_plot
-        import scarphase_profile
-        import scarphase_show
-        import scarphase_refine
-        import scarphase_simpoint
+        # import scarphase_dump
+        # import scarphase_plot
+        # import scarphase_profile
+        # import scarphase_show
+        # import scarphase_refine
+        # import scarphase_simpoint
+
+        # #same as above but with from . before
+        # from .scarphase_dump import run
+        # from .scarphase_plot import PlotCmd
+        # from .scarphase_profile import ProfileCmd
+        # from .scarphase_show import ShowCmd
+        # from .scarphase_refine import RefineCmd
+        # from .scarphase_simpoint import SimpointCmd
 
         self.subcommands = {
             "show"    : Dispatcher.CmdData(
@@ -115,7 +130,7 @@ class Dispatcher:
             print("")
 
             print("Commands:")
-            for k, v in self.subcommands.iteritems():
+            for k, v in self.subcommands.items():
                 if v == None:
                     continue
                 

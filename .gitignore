@@ -25,3 +25,4 @@ proto/scarphase/proto/*.pb.cc
 proto/scarphase/proto/*.pb.h
 pyscarphase/proto/data_pb2.py
 pyscarphase/proto/meta_pb2.py
+CMakeDoxyfile.in

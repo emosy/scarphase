@@ -248,7 +248,7 @@ class SimpointCmd(cmd.Cmd):
                                })
                                
         import json
-        print json.dumps({"simpoints" : _simpoints}, indent=2)
+        print(json.dumps({"simpoints" : _simpoints}, indent=2))
             
     def find_simpoints(self):
         
