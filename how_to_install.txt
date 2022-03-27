@@ -1,6 +1,6 @@
 Here's the steps I used to install scarphase:
 
-1. run "git clone https://github.com/uart/scarphase.git" in the directory you want the scarphase/ folder in
+1. run "git clone https://github.com/emosy/scarphase.git" in the directory you want the scarphase/ folder in
 2. run "cd scarphase" then "git submodule update --init --recursive"
 2. install dependencies - try "sudo apt install cmake doxygen libunwind-dev autoconf automake libtool curl make g++ unzip"
 3. install protobuf - see below
